@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#141210" />
+<title>حكاية 6 أكتوبر 1973 — The Story of October 6, 1973</title>
+<meta name="description" content="قصة العبور والحرب التي غيّرت مسار التاريخ — تجربة سردية تفاعلية سينمائية عن حرب أكتوبر 1973." />
+<meta name="author" content="John Latif" />
+<meta name="keywords" content="6 أكتوبر, حرب أكتوبر, 1973, العبور, سيناء, مصر, October War, Yom Kippur, Ramadan War" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="حكاية 6 أكتوبر 1973" />
+<meta property="og:description" content="قصة العبور والحرب التي غيّرت مسار التاريخ" />
+<meta property="og:url" content="https://hekayet-6october.vercel.app/" />
+<meta property="og:image" content="public/assets/images/hekayet-6october.webp" />
+<meta property="og:locale" content="ar_EG" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="حكاية 6 أكتوبر 1973" />
+<meta name="twitter:description" content="قصة العبور والحرب التي غيّرت مسار التاريخ" />
+<meta name="twitter:image" content="public/assets/images/hekayet-6october.webp" />
+<link rel="icon" type="image/webp" href="public/assets/images/hekayet-6october.webp" />
+<link rel="apple-touch-icon" href="public/assets/images/hekayet-6october.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="public/css/index.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <span class="preloader__mark">٦</span>
+    <div class="preloader__line"><span></span></div>
+    <p class="preloader__text">حكاية 6 أكتوبر 1973</p>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true">
+  <div class="progress__bar" id="progressBar"></div>
+</div>
+
+<nav class="timeline" id="timeline" aria-label="الخط الزمني">
+  <button class="timeline__toggle" id="timelineToggle" aria-label="إظهار/إخفاء الخط الزمني">
+    <span></span><span></span><span></span>
+  </button>
+  <ol class="timeline__list" id="timelineList">
+    <li data-year="1967"><span class="timeline__dot"></span><em>1967</em><small>النكسة</small></li>
+    <li data-year="1967-70"><span class="timeline__dot"></span><em>1967–70</em><small>الاستنزاف</small></li>
+    <li data-year="1973-10-06"><span class="timeline__dot"></span><em>6 أكتوبر</em><small>العبور</small></li>
+    <li data-year="1973-10-14"><span class="timeline__dot"></span><em>14 أكتوبر</em><small>المدرعات</small></li>
+    <li data-year="1973-10-15"><span class="timeline__dot"></span><em>15–16 أكتوبر</em><small>الثغرة</small></li>
+    <li data-year="1973-10-22"><span class="timeline__dot"></span><em>22 أكتوبر</em><small>وقف النار</small></li>
+    <li data-year="1973-10-25"><span class="timeline__dot"></span><em>25 أكتوبر</em><small>الهدنة</small></li>
+    <li data-year="1974"><span class="timeline__dot"></span><em>1974</em><small>فض الاشتباك</small></li>
+    <li data-year="1979"><span class="timeline__dot"></span><em>1979</em><small>السلام</small></li>
+    <li data-year="1982"><span class="timeline__dot"></span><em>1982</em><small>سيناء</small></li>
+    <li data-year="1989"><span class="timeline__dot"></span><em>1989</em><small>طابا</small></li>
+  </ol>
+</nav>
+
+<button class="audio-toggle" id="audioToggle" aria-label="تشغيل/إيقاف الصوت" aria-pressed="false">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M11 5 6 9H3v6h3l5 4V5z"/>
+    <path class="audio-toggle__wave" d="M15.5 8.5a5 5 0 0 1 0 7"/>
+    <path class="audio-toggle__wave" d="M18.5 6a9 9 0 0 1 0 12"/>
+  </svg>
+  <span class="audio-toggle__label">الصوت</span>
+</button>
+
+<audio id="ambientAudio" src="public/assets/sound/song.mp3" loop preload="none"></audio>
+
+<div class="top-credit" role="note">
+  <p>تم إنشاء هذا الموقع بواسطة <strong>John Latif</strong> — جميع الحقوق محفوظة © 2026</p>
+</div>
+
+<main id="story">
+
+<section class="hero" id="hero" data-chapter="hero" aria-label="افتتاحية">
+  <div class="hero__bg">
+    <img src="public/assets/images/hekayet-6october.webp" alt="" class="hero__image" loading="eager" fetchpriority="high" draggable="false" />
+    <div class="hero__vignette"></div>
+    <div class="hero__grain"></div>
+  </div>
+
+  <div class="hero__map" aria-hidden="true">
+    <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet">
+      <path class="hero__map-egypt" d="M120,180 C160,150 220,120 300,110 C380,100 460,105 540,120 C600,130 650,150 690,185 C700,210 700,250 690,290 C670,340 640,380 600,410 C560,440 500,455 440,455 C380,455 320,445 270,420 C220,395 180,360 155,320 C130,280 115,225 120,180 Z" fill="none" stroke="currentColor" stroke-width="1.2" vector-effect="non-scaling-stroke" />
+      <path class="hero__map-nile" d="M400,455 C405,400 410,340 415,290 C420,250 425,210 430,170 C435,140 440,120 445,105" fill="none" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 4" vector-effect="non-scaling-stroke" />
+      <path class="hero__map-canal" d="M430,170 C428,190 425,215 422,240 C420,260 418,280 417,300" fill="none" stroke="#c9a227" stroke-width="1.6" vector-effect="non-scaling-stroke" />
+      <path class="hero__map-sinai" d="M430,170 L500,150 L560,175 L570,240 L540,300 L480,320 L430,300 Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.55" vector-effect="non-scaling-stroke" />
+      <rect class="hero__sweep" x="0" y="0" width="800" height="520" fill="url(#sweepGrad)" opacity="0" />
+      <defs>
+        <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#c9a227" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#c9a227" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">1973 · مصر</p>
+    <h1 class="hero__title">
+      <span class="hero__title-ar">حكاية 6 أكتوبر 1973</span>
+      <span class="hero__title-en">The Story of October 6, 1973</span>
+    </h1>
+    <p class="hero__subtitle">قصة العبور والحرب التي غيّرت مسار التاريخ</p>
+    <p class="hero__date">6 OCTOBER 1973</p>
+  </div>
+
+  <a href="#chapter-01" class="hero__cta" aria-label="ابدأ الحكاية">
+    <span>ابدأ الحكاية</span>
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </a>
+</section>
+
+
+<section class="chapter chapter--prewar" id="chapter-01" data-chapter="1967" aria-labelledby="ch01-title">
+  <div class="chapter__marker" aria-hidden="true">01</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الأول</p>
+      <h2 class="chapter__title" id="ch01-title">قبل أن تبدأ الحكاية</h2>
+      <p class="chapter__lead">بعد يونيو 1967، تغيّرت الخريطة. سيناء تحت الاحتلال، والقناة خطٌّ فاصل بين جيشين. ما حدث بعد ذلك لم يكن انفجارًا مفاجئًا، بل نتيجة سنوات من الانتظار والإعداد.</p>
+    </header>
+
+    <div class="chapter__layout">
+      <figure class="map" data-map="prewar">
+        <div class="map__frame">
+          <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+            <path class="map__egypt" d="M60,180 C130,120 240,90 360,90 C470,90 570,120 640,180 C655,230 650,300 620,360 C580,430 500,470 400,470 C300,470 210,440 150,390 C95,340 70,270 60,180 Z" />
+            <path class="map__sinai" d="M400,160 L560,140 L640,180 L620,270 L560,340 L460,350 L400,300 Z" />
+            <line class="map__canal" x1="405" y1="165" x2="405" y2="310" />
+            <line class="map__eastbank" x1="410" y1="160" x2="410" y2="315" />
+            <g class="map__positions">
+              <circle cx="440" cy="200" r="3.5"/><circle cx="470" cy="230" r="3.5"/>
+              <circle cx="500" cy="260" r="3.5"/><circle cx="530" cy="290" r="3.5"/>
+              <circle cx="460" cy="280" r="3.5"/><circle cx="490" cy="310" r="3.5"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="map__caption">
+          <span class="map__caption-label">خريطة توضيحية</span>
+          سيناء والقناة بعد 1967 — الخط الدفاعي الإسرائيلي على الضفة الشرقية.
+        </figcaption>
+      </figure>
+
+      <div class="chapter__text">
+        <p>في 5 يونيو 1967 خسرت مصر سيناء وقطاع غزة والضفة الغربية والجولان في ستة أيام. توقّف الملاحة في قناة السويس، ونزح مئات الآلاف من المدن على الضفتين.</p>
+        <p>لم يكن ذلك نهاية الطريق، بل بداية مسار طويل من إعادة البناء. من 1967 إلى 1973، تراكمت سنوات من التدريب والتخطيط والاستعداد.</p>
+        <ul class="facts">
+          <li><em>يونيو 1967</em><span>احتلال سيناء والجولان</span></li>
+          <li><em>1967–1970</em><span>حرب الاستنزاف على طول القناة</span></li>
+          <li><em>1970</em><span>وفاة الرئيس جمال عبد الناصر — تولّي أنور السادات</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="photo photo--wide">
+      <img src="public/assets/images/archival/1967/suez-canal-satellite.webp" alt="قناة السويس من الفضاء" loading="lazy" draggable="false" />
+      <figcaption>
+        <span class="photo__caption">قناة السويس من الفضاء — الضفتان والبحيرات المرة.</span>
+        <span class="photo__credit">مصدر الصورة: NASA / Wikimedia Commons</span>
+      </figcaption>
+    </figure>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>Memoirs and official records of the 1967 and 1973 wars.</li>
+        <li>Egyptian State Information Service — historical archive.</li>
+        <li>UN Security Council Resolutions 242 (1967) and 338 (1973).</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--attrition" id="chapter-02" data-chapter="1967-70" aria-labelledby="ch02-title">
+  <div class="chapter__marker" aria-hidden="true">02</div>
+
+  <div class="scene scene--attrition" aria-hidden="true">
+    <div class="scene__sky"></div>
+    <div class="scene__smoke scene__smoke--a"></div>
+    <div class="scene__smoke scene__smoke--b"></div>
+    <svg class="scene__aircraft" viewBox="0 0 40 12" width="60" height="18"><path d="M0 6 L12 4 L18 0 L22 4 L38 5 L40 6 L38 7 L22 8 L18 12 L12 8 Z" fill="currentColor"/></svg>
+    <svg class="scene__aircraft scene__aircraft--b" viewBox="0 0 40 12" width="50" height="15"><path d="M0 6 L12 4 L18 0 L22 4 L38 5 L40 6 L38 7 L22 8 L18 12 L12 8 Z" fill="currentColor"/></svg>
+    <div class="scene__artillery">
+      <div class="artillery__flash"></div>
+      <div class="artillery__flash artillery__flash--b"></div>
+    </div>
+  </div>
+
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الثاني</p>
+      <h2 class="chapter__title" id="ch02-title">حرب الاستنزاف</h2>
+      <p class="chapter__lead">بين 1967 و1970، تحوّلت ضفّتا القناة إلى جبهة مفتوحة. مدفعية، غارات، ومناوشات يومية أنهكت الطرفين، وأعادت بناء الجيش المصري تحت النار.</p>
+    </header>
+
+    <div class="chapter__layout chapter__layout--reverse">
+      <div class="chapter__text">
+        <p>بدأت الاشتباكات على طول قناة السويس في 1967 واستمرت حتى 1970. شملت قصفًا مدفعيًا وغارات جوية وعمليات خاصة على الضفتين.</p>
+        <p>استُشهد رئيس الأركان المصري عبد المنعم رياض في مارس 1969 على الجبهة. وفي 1970 تدخّلت الولايات المتحدة بمبادرة روجرز التي أوقفت القتال مؤقتًا.</p>
+        <ul class="facts">
+          <li><em>سبتمبر 1968</em><span>بدء القصف المدفعي المنتظم</span></li>
+          <li><em>مارس 1969</em><span>استشهاد عبد المنعم رياض</span></li>
+          <li><em>أغسطس 1970</em><span>وقف إطلاق النار — مبادرة روجرز</span></li>
+        </ul>
+      </div>
+
+      <figure class="photo">
+        <img src="public/assets/images/archival/1967/suez-canal-satellite.webp" alt="قناة السويس من الفضاء" loading="lazy" draggable="false" />
+        <figcaption>
+          <span class="photo__caption">قناة السويس — صورة من الفضاء تُظهر الضفتين والبحيرات المرة.</span>
+          <span class="photo__credit">مصدر الصورة: NASA / Wikimedia Commons</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>Egyptian Ministry of Defence historical publications (War of Attrition).</li>
+        <li>Rogers Plan — U.S. State Department archive, 1970.</li>
+        <li>Al-Ahram newspaper archive, 1968–1970.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--preparation" id="chapter-03" data-chapter="1973-10-06" aria-labelledby="ch03-title">
+  <div class="chapter__marker" aria-hidden="true">03</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الثالث</p>
+      <h2 class="chapter__title" id="ch03-title">الاستعداد</h2>
+      <p class="chapter__lead">سنوات من التخطيط الصامت. جيشٌ يُعاد بناؤه، خطة تُرسم ببطء، وتنسيق مع سوريا لتفتح جبهتين في وقت واحد.</p>
+    </header>
+
+    <div class="chapter__layout">
+      <figure class="map" data-map="preparation">
+        <div class="map__frame">
+          <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+            <path class="map__egypt" d="M60,180 C130,120 240,90 360,90 C470,90 570,120 640,180 C655,230 650,300 620,360 C580,430 500,470 400,470 C300,470 210,440 150,390 C95,340 70,270 60,180 Z" />
+            <path class="map__sinai" d="M400,160 L560,140 L640,180 L620,270 L560,340 L460,350 L400,300 Z" />
+            <line class="map__canal" x1="405" y1="165" x2="405" y2="310" />
+            <g class="map__routes" stroke="#c9a227" fill="none" stroke-width="1.4" stroke-dasharray="6 5">
+              <path d="M250,300 Q320,250 400,240"/>
+              <path d="M260,360 Q330,320 405,290"/>
+              <path d="M220,400 Q310,360 405,320"/>
+            </g>
+            <g class="map__crosspoints" fill="#c9a227">
+              <circle cx="405" cy="200" r="4"/>
+              <circle cx="405" cy="240" r="4"/>
+              <circle cx="405" cy="280" r="4"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="map__caption">
+          <span class="map__caption-label">خريطة توضيحية</span>
+          مسارات التجمّع والتحرّك نحو نقاط العبور المُخطَّطة على القناة.
+        </figcaption>
+      </figure>
+
+      <div class="chapter__text">
+        <p>بعد 1970، بدأ الجيش المصري إعادة بناء شاملة: تسليح جديد، تدريب مكثّف، ودراسة دقيقة لخط بارليف على الضفة الشرقية.</p>
+        <p>كان التنسيق مع سوريا أساسيًا: هجوم متزامن على جبهتين يُشتّت العدو. وسرّية التوقيت كانت العامل الأهم — لا أحد يعرف اليوم ولا الساعة.</p>
+        <ul class="facts">
+          <li><em>1971–1972</em><span>إعادة بناء وتدريب</span></li>
+          <li><em>1973</em><span>تنسيق مصري–سوري</span></li>
+          <li><em>السرّية</em><span>التوقيت يُحفظ حتى اللحظة الأخيرة</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="photo photo--wide">
+      <img src="public/assets/images/archival/1973/sadat-portrait.webp" alt="الرئيس أنور السادات" loading="lazy" draggable="false" />
+      <figcaption>
+        <span class="photo__caption">الرئيس محمد أنور السادات — الصورة الرسمية.</span>
+        <span class="photo__credit">مصدر الصورة: الهيئة العامة للاستعلامات / Wikimedia Commons</span>
+      </figcaption>
+    </figure>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>Saad el-Shazly, <em>The Crossing of Suez</em> (1980).</li>
+        <li>Mohamed Abdel Ghani El-Gamasy, <em>The October War</em> (1993).</li>
+        <li>Egyptian Armed Forces historical publications.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--h-hour" id="chapter-04" data-chapter="1973-10-06" aria-labelledby="ch04-title">
+  <div class="chapter__marker" aria-hidden="true">04</div>
+
+  <div class="scene scene--h-hour" aria-hidden="true">
+    <div class="scene__sky"></div>
+    <div class="scene__sun"></div>
+    <svg class="scene__aircraft scene__aircraft--wave" viewBox="0 0 40 12" width="70" height="20"><path d="M0 6 L12 4 L18 0 L22 4 L38 5 L40 6 L38 7 L22 8 L18 12 L12 8 Z" fill="currentColor"/></svg>
+    <svg class="scene__aircraft scene__aircraft--wave-b" viewBox="0 0 40 12" width="70" height="20"><path d="M0 6 L12 4 L18 0 L22 4 L38 5 L40 6 L38 7 L22 8 L18 12 L12 8 Z" fill="currentColor"/></svg>
+    <svg class="scene__aircraft scene__aircraft--wave-c" viewBox="0 0 40 12" width="70" height="20"><path d="M0 6 L12 4 L18 0 L22 4 L38 5 L40 6 L38 7 L22 8 L18 12 L12 8 Z" fill="currentColor"/></svg>
+    <div class="scene__horizon">
+      <div class="flash flash--a"></div>
+      <div class="flash flash--b"></div>
+      <div class="flash flash--c"></div>
+      <div class="flash flash--d"></div>
+    </div>
+  </div>
+
+  <div class="chapter__inner chapter__inner--center">
+    <p class="clock" id="ch04-clock" aria-live="polite">الساعة 2:00 ظهرًا</p>
+    <h2 class="chapter__title chapter__title--xl" id="ch04-title">6 أكتوبر 1973</h2>
+    <p class="chapter__lead chapter__lead--center">في الثانية بعد الظهر، انطلق أكثر من 200 طائرة مصرية عبر القناة، وبدأ القصف المدفعي على طول الجبهة. كانت اللحظة التي انتظرها الجيش المصري ست سنوات.</p>
+    <p class="chapter__note">اختير التوقيت بعناية: شهر رمضان، وضوء النهار، ومدّ المياه في القناة يخدم العبور.</p>
+  </div>
+
+  <figure class="photo photo--wide">
+    <img src="public/assets/images/archival/1973/war-collage-1973.webp" alt="مشاهد من حرب أكتوبر 1973" loading="lazy" draggable="false" />
+    <figcaption>
+      <span class="photo__caption">مشاهد من حرب أكتوبر — طائرة، دبابة، مروحية، وجنود.</span>
+      <span class="photo__credit">مصدر الصورة: الأرشيف العسكري المصري / Wikimedia Commons</span>
+    </figcaption>
+  </figure>
+
+  <footer class="chapter__sources chapter__sources--center">
+    <p class="sources__label">المصادر</p>
+    <ul>
+      <li>Egyptian Air Force historical record, 6 October 1973.</li>
+      <li>Al-Gamasy, <em>The October War</em>, chapter on the opening strike.</li>
+    </ul>
+  </footer>
+</section>
+
+
+<section class="chapter chapter--crossing" id="chapter-05" data-chapter="1973-10-06" aria-labelledby="ch05-title">
+  <div class="chapter__marker" aria-hidden="true">05</div>
+
+  <div class="scene scene--crossing" aria-hidden="true">
+    <div class="crossing__sky"></div>
+    <div class="crossing__far-bank"></div>
+    <div class="crossing__water">
+      <div class="water__ripple water__ripple--a"></div>
+      <div class="water__ripple water__ripple--b"></div>
+      <div class="water__ripple water__ripple--c"></div>
+    </div>
+
+    <svg class="boat" viewBox="0 0 60 20" data-boat="1">
+      <path d="M2 14 Q30 20 58 14 L54 18 Q30 22 6 18 Z" fill="currentColor"/>
+      <rect x="26" y="6" width="2" height="8" fill="currentColor"/>
+      <path d="M28 6 L44 12 L28 14 Z" fill="currentColor" opacity="0.85"/>
+      <circle cx="18" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="24" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="34" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="40" cy="12" r="2.2" fill="currentColor"/>
+    </svg>
+
+    <svg class="boat boat--b" viewBox="0 0 60 20" data-boat="2">
+      <path d="M2 14 Q30 20 58 14 L54 18 Q30 22 6 18 Z" fill="currentColor"/>
+      <rect x="26" y="6" width="2" height="8" fill="currentColor"/>
+      <path d="M28 6 L44 12 L28 14 Z" fill="currentColor" opacity="0.85"/>
+      <circle cx="18" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="24" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="34" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="40" cy="12" r="2.2" fill="currentColor"/>
+    </svg>
+
+    <svg class="boat boat--c" viewBox="0 0 60 20" data-boat="3">
+      <path d="M2 14 Q30 20 58 14 L54 18 Q30 22 6 18 Z" fill="currentColor"/>
+      <rect x="26" y="6" width="2" height="8" fill="currentColor"/>
+      <path d="M28 6 L44 12 L28 14 Z" fill="currentColor" opacity="0.85"/>
+      <circle cx="18" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="24" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="34" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="40" cy="12" r="2.2" fill="currentColor"/>
+    </svg>
+
+    <div class="crossing__flag">
+      <span class="flag__pole"></span>
+      <span class="flag__cloth"></span>
+    </div>
+
+    <div class="crossing__smoke crossing__smoke--a"></div>
+    <div class="crossing__smoke crossing__smoke--b"></div>
+
+    <svg class="crossing__aircraft" viewBox="0 0 40 12" width="60" height="18"><path d="M0 6 L12 4 L18 0 L22 4 L38 5 L40 6 L38 7 L22 8 L18 12 L12 8 Z" fill="currentColor"/></svg>
+  </div>
+
+  <div class="chapter__inner chapter__inner--crossing">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الخامس</p>
+      <h2 class="chapter__title" id="ch05-title">العبور</h2>
+      <p class="chapter__lead">قوارب صغيرة، جنود يحملون معداتهم، ومياه القناة تفتح الطريق. من الضفة الغربية إلى الشرقية، بدأ العبور.</p>
+    </header>
+
+    <ul class="crossing__facts">
+      <li><em>200+</em><span>طائرة شاركت في الضربة الأولى</span></li>
+      <li><em>~8,000</em><span>جندي في الموجة الأولى من العبور</span></li>
+      <li><em>~12 ساعة</em><span>لاستكمال السيطرة على الضفة الشرقية في القطاعات الأولى</span></li>
+    </ul>
+  </div>
+
+  <figure class="photo photo--wide">
+    <img src="public/assets/images/archival/1973/tanks-crossing-bridge.webp" alt="دبابات مصرية تعبر قناة السويس على الجسر" loading="lazy" draggable="false" />
+    <figcaption>
+      <span class="photo__caption">مدرعات مصرية تعبر قناة السويس على الجسر — أكتوبر 1973.</span>
+      <span class="photo__credit">مصدر الصورة: الأرشيف العسكري المصري / Wikimedia Commons</span>
+    </figcaption>
+  </figure>
+
+  <footer class="chapter__sources">
+    <p class="sources__label">المصادر</p>
+    <ul>
+      <li>El-Shazly, <em>The Crossing of Suez</em>.</li>
+      <li>Egyptian Armed Forces historical record — crossing operations.</li>
+      <li>Institute for National Security Studies (INSS) — October War studies.</li>
+    </ul>
+  </footer>
+</section>
+
+
+<section class="chapter chapter--barlev" id="chapter-06" data-chapter="1973-10-06" aria-labelledby="ch06-title">
+  <div class="chapter__marker" aria-hidden="true">06</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل السادس</p>
+      <h2 class="chapter__title" id="ch06-title">خط بارليف</h2>
+      <p class="chapter__lead">ساتر رملي ضخم، نقاط حصينة، وقناة مائية. كيف تعاملت القوات المصرية مع العقبة الهندسية؟</p>
+    </header>
+
+    <div class="chapter__layout chapter__layout--reverse">
+      <div class="chapter__text">
+        <p>امتد خط بارليف بمحاذاة الضفة الشرقية، وكان الساتر الترابي أحد أهم عناصره. كان ارتفاعه وميله يمثّلان عقبة أمام القوات المهاجمة.</p>
+        <p>استخدمت فرق المهندسين العسكريين مضخات مياه قوية لإحداث فتحات في الساتر، ما سمح بعبور القوات وبناء الجسور لاحقًا.</p>
+        <ul class="facts">
+          <li><em>الساتر</em><span>ارتفاع يصل إلى نحو 20 مترًا في بعض النقاط</span></li>
+          <li><em>المضخات</em><span>استخدام المياه لإحداث الفتحات</span></li>
+          <li><em>الجسور</em><span>تركيب جسور ثقيلة بعد تأمين الضفة</span></li>
+        </ul>
+      </div>
+
+      <figure class="barlev">
+        <div class="barlev__frame">
+          <div class="barlev__sand">
+            <span class="barlev__breach barlev__breach--a"></span>
+            <span class="barlev__breach barlev__breach--b"></span>
+          </div>
+          <div class="barlev__water">
+            <span class="barlev__jet barlev__jet--a"></span>
+            <span class="barlev__jet barlev__jet--b"></span>
+          </div>
+          <div class="barlev__pump barlev__pump--a"></div>
+          <div class="barlev__pump barlev__pump--b"></div>
+        </div>
+        <figcaption class="map__caption">
+          <span class="map__caption-label">رسم توضيحي</span>
+          استخدام مضخات المياه لإحداث فتحات في الساتر الترابي.
+        </figcaption>
+      </figure>
+    </div>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>Egyptian Corps of Engineers — historical record of crossing operations.</li>
+        <li>El-Gamasy, <em>The October War</em>, engineering chapter.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--eastbank" id="chapter-07" data-chapter="1973-10-06" aria-labelledby="ch07-title">
+  <div class="chapter__marker" aria-hidden="true">07</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل السابع</p>
+      <h2 class="chapter__title" id="ch07-title">شرق القناة</h2>
+      <p class="chapter__lead">رؤوس الجسور تتوسّع، الجسور تُركّب، والعربات تعبر. خريطة من الأعلى توضح ما حدث.</p>
+    </header>
+
+    <figure class="map map--topdown" data-map="eastbank">
+      <div class="map__frame">
+        <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+          <rect class="map__canal-band" x="330" y="40" width="26" height="440"/>
+          <g class="map__egypt-pos" fill="#c9a227">
+            <rect x="250" y="120" width="60" height="22"/>
+            <rect x="250" y="180" width="60" height="22"/>
+            <rect x="250" y="240" width="60" height="22"/>
+            <rect x="250" y="300" width="60" height="22"/>
+            <rect x="250" y="360" width="60" height="22"/>
+          </g>
+          <g class="map__bridges" stroke="#e6d9b8" stroke-width="2">
+            <line x1="310" y1="140" x2="380" y2="140"/>
+            <line x1="310" y1="260" x2="380" y2="260"/>
+            <line x1="310" y1="380" x2="380" y2="380"/>
+          </g>
+          <g class="map__vehicles">
+            <rect class="veh veh--1" x="330" y="138" width="10" height="5" rx="1"/>
+            <rect class="veh veh--2" x="330" y="258" width="10" height="5" rx="1"/>
+            <rect class="veh veh--3" x="330" y="378" width="10" height="5" rx="1"/>
+          </g>
+          <path class="map__expansion" d="M356,80 Q460,80 520,140 Q560,220 540,320 Q500,440 380,460 L356,460 Z"/>
+        </svg>
+      </div>
+      <figcaption class="map__caption">
+        <span class="map__caption-label">خريطة متحركة</span>
+        توسّع رؤوس الجسور شرق القناة وعبور العربات على الجسور.
+      </figcaption>
+    </figure>
+
+    <div class="chapter__text chapter__text--wide">
+      <p>بعد تأمين الضفة الشرقية، بدأ تركيب الجسور الثقيلة وعبور المدرعات. توسّعت رؤوس الجسور تدريجيًا في اتجاه الشرق، مع تصاعد الاشتباكات مع الاحتياطيات الإسرائيلية.</p>
+    </div>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>El-Shazly, <em>The Crossing of Suez</em> — bridgehead chapter.</li>
+        <li>Egyptian Armed Forces historical record.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--syrian" id="chapter-08" data-chapter="1973-10-06" aria-labelledby="ch08-title">
+  <div class="chapter__marker" aria-hidden="true">08</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الثامن</p>
+      <h2 class="chapter__title" id="ch08-title">الجبهة السورية</h2>
+      <p class="chapter__lead">في التوقيت نفسه تقريبًا، انطلق الهجوم السوري على الجولان. جبهتان في وقت واحد — وهذا ما كان يخطط له منذ البداية.</p>
+    </header>
+
+    <div class="chapter__layout">
+      <figure class="map map--split" data-map="syrian">
+        <div class="map__frame">
+          <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+            <line x1="350" y1="20" x2="350" y2="500" class="map__divider"/>
+            <text x="500" y="45" class="map__label">الجبهة المصرية</text>
+            <text x="180" y="45" class="map__label">الجبهة السورية</text>
+            <path class="map__egypt" d="M370,180 C420,140 480,120 560,120 C620,120 660,150 670,200 C670,270 640,340 590,400 C540,450 460,460 400,440 C380,400 370,300 370,180 Z"/>
+            <line class="map__canal" x1="405" y1="180" x2="405" y2="380"/>
+            <path class="map__syria" d="M30,200 C80,150 160,120 240,130 C300,140 330,180 330,240 C330,320 290,400 220,440 C150,470 80,460 40,410 C20,360 20,260 30,200 Z"/>
+            <path class="map__golan" d="M240,180 L330,180 L330,240 L240,260 Z"/>
+            <g class="map__syrian-arrows" stroke="#c9a227" fill="none" stroke-width="1.6">
+              <path d="M120,300 Q200,260 240,220"/>
+              <path d="M140,340 Q210,300 250,250"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="map__caption">
+          <span class="map__caption-label">خريطة مقسّمة</span>
+          الجبهتان المصرية والسورية — هجوم متزامن في 6 أكتوبر 1973.
+        </figcaption>
+      </figure>
+
+      <div class="chapter__text">
+        <p>هاجمت القوات السورية مواقع إسرائيلية على هضبة الجولان في 6 أكتوبر. تقدّمت مبدئيًا، ثم واجهت هجمات مضادة عنيفة بعد استدعاء الاحتياطي الإسرائيلي.</p>
+        <p>التزامن بين الجبهتين كان أحد أهم عناصر خطة أكتوبر.</p>
+        <ul class="facts">
+          <li><em>الجولان</em><span>هجوم سوري متزامن</span></li>
+          <li><em>الجبهتان</em><span>ضغط على العدو من الاتجاهين</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>Syrian military historical record of the October War, 1973.</li>
+        <li>INSS — studies on the Golan front, 1973.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--counter" id="chapter-09" data-chapter="1973-10-14" aria-labelledby="ch09-title">
+  <div class="chapter__marker" aria-hidden="true">09</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل التاسع</p>
+      <h2 class="chapter__title" id="ch09-title">الهجمات المضادة</h2>
+      <p class="chapter__lead">استدعت إسرائيل احتياطيها. بدأت الهجمات المضادة على الجبهتين. تغيّرت خطوط المواجهة — وبدأت معركة مدرعات في الصحراء.</p>
+    </header>
+
+    <figure class="map map--frontlines" data-map="counter">
+      <div class="map__frame">
+        <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+          <path class="map__egypt" d="M60,180 C130,120 240,90 360,90 C470,90 570,120 640,180 C655,230 650,300 620,360 C580,430 500,470 400,470 C300,470 210,440 150,390 C95,340 70,270 60,180 Z"/>
+          <line class="map__canal" x1="405" y1="165" x2="405" y2="310"/>
+          <path class="map__frontline map__frontline--before" d="M410,180 Q470,190 520,210 Q560,240 560,280 Q540,320 500,330 Q460,330 430,310" />
+          <g class="map__counter-arrows" stroke="#b23a2f" fill="none" stroke-width="1.8">
+            <path d="M600,240 Q540,240 490,240" marker-end="url(#arrowRed)"/>
+            <path d="M600,300 Q540,300 490,300" marker-end="url(#arrowRed)"/>
+            <path d="M590,360 Q530,350 480,340" marker-end="url(#arrowRed)"/>
+          </g>
+          <defs>
+            <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#b23a2f"/>
+            </marker>
+          </defs>
+          <g class="map__tanks" fill="currentColor">
+            <rect x="560" y="235" width="14" height="6" rx="1"/>
+            <rect x="560" y="295" width="14" height="6" rx="1"/>
+            <rect x="550" y="355" width="14" height="6" rx="1"/>
+          </g>
+        </svg>
+      </div>
+      <figcaption class="map__caption">
+        <span class="map__caption-label">خريطة متحركة</span>
+        اتجاهات الهجمات المضادة الإسرائيلية على الجبهة المصرية.
+      </figcaption>
+    </figure>
+
+    <div class="chapter__text chapter__text--wide">
+      <p>بعد استنفاد الموجة الأولى، دفعت إسرائيل باحتياطياتها إلى الجبهتين. نشبت معارك مدرعات عنيفة في سيناء والجولان، وتغيّرت مواقع الخطوط الأمامية أكثر من مرة.</p>
+    </div>
+
+    <figure class="photo photo--wide">
+      <img src="public/assets/images/archival/1973/destroyed-tank.webp" alt="دبابة مدمرة في سيناء" loading="lazy" draggable="false" />
+      <figcaption>
+        <span class="photo__caption">دبابة مدمرة في سيناء خلال معارك المدرعات — أكتوبر 1973.</span>
+        <span class="photo__credit">مصدر الصورة: IDF Archive / Wikimedia Commons</span>
+      </figcaption>
+    </figure>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>El-Shazly, <em>The Crossing of Suez</em> — armoured battles chapter.</li>
+        <li>INSS — studies on Israeli counteroffensives, October 1973.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--oct14" id="chapter-10" data-chapter="1973-10-14" aria-labelledby="ch10-title">
+  <div class="chapter__marker" aria-hidden="true">10</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل العاشر</p>
+      <h2 class="chapter__title" id="ch10-title">14 أكتوبر</h2>
+      <p class="chapter__lead">هجوم مدرّع مصري واسع شرق القناة. نتائجه العسكرية كانت محلّ نقاش تاريخي.</p>
+    </header>
+
+    <figure class="map map--armour" data-map="oct14">
+      <div class="map__frame">
+        <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+          <path class="map__egypt" d="M60,180 C130,120 240,90 360,90 C470,90 570,120 640,180 C655,230 650,300 620,360 C580,430 500,470 400,470 C300,470 210,440 150,390 C95,340 70,270 60,180 Z"/>
+          <line class="map__canal" x1="405" y1="165" x2="405" y2="310"/>
+          <g class="map__armour-arrows" stroke="#c9a227" fill="none" stroke-width="1.8">
+            <path d="M420,200 Q480,200 540,220" marker-end="url(#arrowGold)"/>
+            <path d="M420,240 Q490,250 560,260" marker-end="url(#arrowGold)"/>
+            <path d="M420,280 Q480,300 550,320" marker-end="url(#arrowGold)"/>
+          </g>
+          <defs>
+            <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#c9a227"/>
+            </marker>
+          </defs>
+          <g class="map__tanks" fill="currentColor">
+            <rect x="440" y="198" width="14" height="6" rx="1"/>
+            <rect x="450" y="238" width="14" height="6" rx="1"/>
+            <rect x="460" y="278" width="14" height="6" rx="1"/>
+            <rect x="500" y="218" width="14" height="6" rx="1"/>
+            <rect x="510" y="258" width="14" height="6" rx="1"/>
+          </g>
+        </svg>
+      </div>
+      <figcaption class="map__caption">
+        <span class="map__caption-label">خريطة متحركة</span>
+        محاور الهجوم المدرّع المصري في 14 أكتوبر.
+      </figcaption>
+    </figure>
+
+    <div class="chapter__text chapter__text--wide">
+      <p>في 14 أكتوبر شنت القوات المصرية هجومًا مدرّعًا واسعًا شرق القناة. واجه الهجوم مقاومة عنيفة من المدرعات الإسرائيلية، وكبّد الطرفان خسائر. يُعدّ هذا اليوم نقطة تحوّل في مسار الحرب.</p>
+    </div>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>El-Shazly, <em>The Crossing of Suez</em> — 14 October offensive.</li>
+        <li>El-Gamasy, <em>The October War</em>.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--deversoir" id="chapter-11" data-chapter="1973-10-15" aria-labelledby="ch11-title">
+  <div class="chapter__marker" aria-hidden="true">11</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الحادي عشر</p>
+      <h2 class="chapter__title" id="ch11-title">الثغرة</h2>
+      <p class="chapter__lead">بين الجيشين المصريين، فتحة على القناة. عبرت منها قوات إسرائيلية إلى الضفة الغربية.</p>
+    </header>
+
+    <figure class="map map--deversoir" data-map="deversoir">
+      <div class="map__frame">
+        <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+          <path class="map__egypt" d="M60,180 C130,120 240,90 360,90 C470,90 570,120 640,180 C655,230 650,300 620,360 C580,430 500,470 400,470 C300,470 210,440 150,390 C95,340 70,270 60,180 Z"/>
+          <line class="map__canal" x1="405" y1="165" x2="405" y2="310"/>
+          <circle class="map__gap" cx="405" cy="240" r="10" fill="none" stroke="#b23a2f" stroke-width="1.6"/>
+          <g class="map__israel-arrows" stroke="#b23a2f" fill="none" stroke-width="1.8">
+            <path d="M450,240 Q420,240 390,240" marker-end="url(#arrowRed2)"/>
+            <path d="M400,240 Q360,260 320,280"/>
+            <path d="M400,240 Q360,220 320,200"/>
+          </g>
+          <defs>
+            <marker id="arrowRed2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#b23a2f"/>
+            </marker>
+          </defs>
+          <g class="map__israel-pos" fill="#b23a2f">
+            <rect x="300" y="230" width="18" height="10" rx="1"/>
+            <rect x="280" y="270" width="18" height="10" rx="1"/>
+            <rect x="290" y="200" width="18" height="10" rx="1"/>
+          </g>
+        </svg>
+      </div>
+      <figcaption class="map__caption">
+        <span class="map__caption-label">خريطة متحركة</span>
+        الثغرة بين الجيشين — عبور قوات إسرائيلية إلى الضفة الغربية.
+      </figcaption>
+    </figure>
+
+    <div class="chapter__text chapter__text--wide">
+      <p>بين الجيش الثاني في الشمال والجيش الثالث في الجنوب، بقيت فتحة على القناة. عبرت منها قوات إسرائيلية إلى الضفة الغربية، وبدأت في توسيع رأس جسر غرب القناة. سُمّيت هذه الفتحة «الثغرة».</p>
+    </div>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>El-Shazly, <em>The Crossing of Suez</em> — the gap.</li>
+        <li>INSS — studies on the Israeli crossing to the west bank, October 1973.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--thirdarmy" id="chapter-12" data-chapter="1973-10-22" aria-labelledby="ch12-title">
+  <div class="chapter__marker" aria-hidden="true">12</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الثاني عشر</p>
+      <h2 class="chapter__title" id="ch12-title">الجيش الثالث</h2>
+      <p class="chapter__lead">تغيّرت الأوضاع في القطاع الجنوبي. يحتاج الأمر إلى عرضٍ هادئ ودقيق.</p>
+    </header>
+
+    <figure class="map map--thirdarmy" data-map="thirdarmy">
+      <div class="map__frame">
+        <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet" class="map__svg">
+          <path class="map__egypt" d="M60,180 C130,120 240,90 360,90 C470,90 570,120 640,180 C655,230 650,300 620,360 C580,430 500,470 400,470 C300,470 210,440 150,390 C95,340 70,270 60,180 Z"/>
+          <line class="map__canal" x1="405" y1="165" x2="405" y2="310"/>
+          <path class="map__army3" d="M405,260 L520,260 L540,340 L470,400 L405,400 Z"/>
+          <g class="map__supply" stroke="#c9a227" fill="none" stroke-width="1.2" stroke-dasharray="4 4">
+            <path d="M405,340 L360,360"/>
+            <path d="M405,360 L360,380"/>
+          </g>
+          <path class="map__encircle" d="M400,255 Q540,250 555,340 Q540,420 400,410" fill="none" stroke="#b23a2f" stroke-width="1.4" stroke-dasharray="3 3"/>
+        </svg>
+      </div>
+      <figcaption class="map__caption">
+        <span class="map__caption-label">خريطة توضيحية</span>
+        منطقة الجيش الثالث المصري جنوب القناة خلال الأيام الأخيرة من القتال.
+      </figcaption>
+    </figure>
+
+    <div class="chapter__text chapter__text--wide">
+      <p>بعد الثغرة، تغيّرت الأوضاع في القطاع الجنوبي. يُعرض هنا الموقف العسكري بشكل توضيحي، بعيدًا عن التهويل، اعتمادًا على المصادر التاريخية.</p>
+    </div>
+
+    <ol class="mini-timeline">
+      <li><em>17 أكتوبر</em><span>توسّع رأس الجسر غرب القناة</span></li>
+      <li><em>19 أكتوبر</em><span>اشتباكات في القطاع الجنوبي</span></li>
+      <li><em>22 أكتوبر</em><span>صدور قرار مجلس الأمن 338</span></li>
+      <li><em>24 أكتوبر</em><span>مواجهات محدودة حول السويس</span></li>
+      <li><em>25 أكتوبر</em><span>وقف إطلاق النار</span></li>
+    </ol>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>El-Gamasy, <em>The October War</em>.</li>
+        <li>UN Security Council Resolution 338 (22 October 1973).</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--ceasefire" id="chapter-13" data-chapter="1973-10-22" aria-labelledby="ch13-title">
+  <div class="chapter__marker" aria-hidden="true">13</div>
+  <div class="chapter__inner chapter__inner--center">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الثالث عشر</p>
+      <h2 class="chapter__title chapter__title--xl" id="ch13-title">وقف إطلاق النار</h2>
+    </header>
+
+    <p class="ceasefire__date">22 أكتوبر 1973</p>
+    <p class="ceasefire__date">25 أكتوبر 1973</p>
+
+    <p class="chapter__lead chapter__lead--center">صدر قرار مجلس الأمن رقم 338 في 22 أكتوبر 1973، ثم تلته قرارات واتصالات حتى استقرّ وقف إطلاق النار فعليًا في 25 أكتوبر.</p>
+
+    <div class="quiet-scene" aria-hidden="true">
+      <div class="quiet-scene__fog"></div>
+      <div class="quiet-scene__horizon"></div>
+    </div>
+
+    <footer class="chapter__sources chapter__sources--center">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>UN Security Council Resolution 338 (22 October 1973).</li>
+        <li>UN Security Council Resolution 339 (23 October 1973).</li>
+        <li>UN Security Council Resolution 340 (25 October 1973).</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--postwar" id="chapter-14" data-chapter="1974" aria-labelledby="ch14-title">
+  <div class="chapter__marker" aria-hidden="true">14</div>
+  <div class="chapter__inner">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الرابع عشر</p>
+      <h2 class="chapter__title" id="ch14-title">ما بعد الحرب</h2>
+      <p class="chapter__lead">من ميدان القتال إلى طاولة التفاوض. اتفاقات فضّ الاشتباك ثم مفاوضات السلام.</p>
+    </header>
+
+    <div class="chapter__layout">
+      <div class="chapter__text">
+        <p>في 11 نوفمبر 1973 وقّع الطرفان اتفاقًا برعاية الأمم المتحدة عند الكيلو 101 على طريق القاهرة–السويس. تبعه اتفاقا فضّ الاشتباك في 1974 (الجبهة المصرية) و1974 (الجبهة السورية).</p>
+        <p>ثم بدأت مسارات التفاوض السياسي، التي تُوّجت لاحقًا باتفاقيات كامب ديفيد 1978 ومعاهدة السلام 1979.</p>
+        <ul class="facts">
+          <li><em>نوفمبر 1973</em><span>اتفاق الكيلو 101</span></li>
+          <li><em>1974</em><span>فضّ الاشتباك — الجبهة المصرية والسورية</span></li>
+          <li><em>1978</em><span>اتفاقيات كامب ديفيد</span></li>
+          <li><em>1979</em><span>معاهدة السلام المصرية–الإسرائيلية</span></li>
+        </ul>
+      </div>
+
+      <figure class="photo">
+        <img src="public/assets/images/archival/1979/camp-david-1978.webp" alt="اتفاقيات كامب ديفيد 1978" loading="lazy" draggable="false" />
+        <figcaption>
+          <span class="photo__caption">مناحيم بيغن، جيمي كارتر، أنور السادات — كامب ديفيد 1978.</span>
+          <span class="photo__credit">مصدر الصورة: البيت الأبيض / Wikimedia Commons</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <footer class="chapter__sources">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>UN documents on the Kilometer 101 talks, November 1973.</li>
+        <li>Sinai Disengagement Agreements, 1974 and 1975.</li>
+        <li>Camp David Accords, 1978 — official text.</li>
+        <li>Egypt–Israel Peace Treaty, 1979 — official text.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<section class="chapter chapter--sinai" id="chapter-15" data-chapter="1982" aria-labelledby="ch15-title">
+  <div class="chapter__marker" aria-hidden="true">15</div>
+  <div class="chapter__inner chapter__inner--center">
+    <header class="chapter__header">
+      <p class="chapter__kicker">الفصل الأخير</p>
+      <h2 class="chapter__title" id="ch15-title">عودة سيناء</h2>
+      <p class="chapter__lead chapter__lead--center">عودة تدريجية للسيادة المصرية على سيناء، ثم حسم مسألة طابا في 1989.</p>
+    </header>
+
+    <ol class="return-timeline">
+      <li><em>1973</em><span>الحرب</span></li>
+      <li><em>1974</em><span>فضّ الاشتباك</span></li>
+      <li><em>1975</em><span>اتفاق سيناء الثاني</span></li>
+      <li><em>1978</em><span>كامب ديفيد</span></li>
+      <li><em>1979</em><span>معاهدة السلام</span></li>
+      <li><em>1982</em><span>استكمال الانسحاب من سيناء</span></li>
+      <li><em>1989</em><span>تحكيم طابا وعودتها لمصر</span></li>
+    </ol>
+
+    <figure class="photo photo--wide">
+      <img src="public/assets/images/archival/1982/sinai-flag-raising.webp" alt="رفع العلم المصري على سيناء 1982" loading="lazy" draggable="false" />
+      <figcaption>
+        <span class="photo__caption">رفع العلم المصري على سيناء بعد استكمال الانسحاب — 25 أبريل 1982.</span>
+        <span class="photo__credit">مصدر الصورة: الهيئة العامة للاستعلامات / Wikimedia Commons</span>
+      </figcaption>
+    </figure>
+
+    <div class="closing">
+      <p class="closing__line">الحكاية لم تنتهِ يوم 6 أكتوبر.</p>
+      <p class="closing__line">لكن يوم 6 أكتوبر غيّر مسارها.</p>
+    </div>
+
+    <div class="final-title">
+      <p class="final-title__ar">حكاية 6 أكتوبر 1973</p>
+      <p class="final-title__en">The Story of October 6, 1973</p>
+    </div>
+
+    <footer class="chapter__sources chapter__sources--center">
+      <p class="sources__label">المصادر</p>
+      <ul>
+        <li>Egypt–Israel Peace Treaty, 1979.</li>
+        <li>Taba Arbitration Award, 1988 (implemented 1989).</li>
+        <li>Egyptian State Information Service — Sinai liberation records.</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<footer class="site-footer" aria-label="تذييل">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <p class="site-footer__title">حكاية 6 أكتوبر 1973</p>
+      <p class="site-footer__sub">The Story of October 6, 1973</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="روابط">
+      <a href="#hero">البداية</a>
+      <a href="/sources">المصادر</a>
+      <a href="#chapter-15">عودة سيناء</a>
+    </nav>
+    <p class="site-footer__note">تم إنشاء هذا الموقع بواسطة <strong>John Latif</strong>. جميع الحقوق محفوظة © 2026.</p>
+    <p class="site-footer__copyright">© <span id="footerYear"></span> — Hekayet 6 October · hekayet-6october.vercel.app</p>
+  </div>
+</footer>
+
+</main>
+
+<script defer src="public/js/index.js"></script>
+</body>
+</html>
