@@ -2,8 +2,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/index", "destination": "/index.html" },
-    { "source": "/sources", "destination": "/sources.html" }
+    { "source": "/index", "destination": "/public/index.html" },
+    { "source": "/sources", "destination": "/public/sources.html" }
   ],
   "headers": [
     {
